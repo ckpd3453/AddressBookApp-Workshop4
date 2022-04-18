@@ -30,6 +30,62 @@
                     <img src="../assets/images/close.png" alt="" height="35px" />
                 </div>
             </div>
+
+            <!-- UC3 -->
+            <div class="row-content">
+                <label class="label text" for="name">Full Name</label>
+                <input class="input" type="text" name="Name" id="name" required />
+                <error-output class="name-error" for="text"></error-output>
+            </div>
+
+            <div class="row-content">
+                <label class="label text" for="address">Address</label>
+                <textarea class="input" id="address" name="Address" style="height: 100px" required></textarea>
+                <error-output class="address-error" for="address"></error-output>
+            </div>
+
+            <div class="row-content-exp">
+                <div class="oneRow-content">
+                    <label class="label text" for="city">City</label>
+                    <select class="select-input" id="city" name="City" required>
+                    <option value="" selected disabled hidden>Select City</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Kolhapur">Kolhapur</option>
+                  </select>
+                </div>
+
+                <div class="oneRow-content">
+                    <label class="label text" for="state">State</label>
+                    <select class="select-input" id="state" name="State" required>
+                  <option value="" selected disabled hidden>Select State</option>
+                  <option value="Maharashtra">Maharashtra</option>
+                  <option value="Karnatak">Karnatak</option>
+                </select>
+                </div>
+                <div class="oneRow-content">
+                    <label class="label text" for="zip">Zip</label>
+                    <input class="input" type="text" name="Zip" id="zip" required />
+                </div>
+            </div>
+            <div class="row-content">
+                <label class="label text" for="phone">Phone Number</label>
+                <input class="input" type="text" name="Phone" id="phone" required />
+                <error-output class="phone-error" for="text"></error-output>
+            </div>
+            <div class="row-content">
+                <label class="label text" for="email">Email</label>
+                <input class="input" type="text" name="Email" id="email" required />
+                <error-output class="email-error" for="text"></error-output>
+                `
+            </div>
+            <div class="add-reset">
+                <button type="submit" class="button addButton" id="addButton">
+                  Add
+                </button>
+                <button type="button" onclick="resetForm()" class="resetButton button">
+                  Reset
+                </button>
+            </div>
         </form>
     </div>
 </body>
